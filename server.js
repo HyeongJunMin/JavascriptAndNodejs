@@ -17,6 +17,7 @@ http.createServer((request, response) => {
       response.statusCode = 200; // 성공 상태 코드
        response.setHeader('Content-Type', 'text/plain'); // header 설정
       response.write('hi\n'); // body에 정보 탑재
-      response.end('the end!'); // 정보 탑재 후 브라우저로 전송
+      //response.end('the end!'); // 정보 탑재 후 브라우저로 전송
+      response.end('<a href="http://localhost:9000/myhome/index.html">ff</a>');
     });
 }).listen(9000);
