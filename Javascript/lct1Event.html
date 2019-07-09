@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript" src="./lct1Event.js"></script>
+    <link rel="stylesheet" href="./lct1Event.css" type="text/css"></link>
+
+  </head>
+  <body onload="f3onkeydown('aaa')">
+
+    onclick : 요소가 클릭되면 발생
+    <input type="button" value="hey" onclick="f1onclick()"><br>
+    onchange : 내용이 바뀌고 포커스가 벗어나면 발생
+    <input type="text" id="txt1" onchange="f2onchanged()"><br>
+    onkeydown : 요소가 포커스를 갖고있을 때 key down을 감지
+    <input type="text" name="txtD" onkeydown="f3onkeydown()" value=""><br>
+    <form class="form1" action="index.html" method="post" name="form1" onmouseenter="f1onclick()">
+    onload : 웹페이지 로드가 끝났을 때<br>
+    onmouseenter : 마우스커서가 영역 안으로 들어왔을 때<br>
+    </form>
+    <form name="form2" action="index.html" method="post"  onmouseenter="f4mousetime()" onmouseout="f4mousetime2()">
+      <br>마우스 커서 1.5초동안 머물면 얼럿,<br> 실행 전에 나가면 중단
+    </form>
+    <input type="text" title="입력하거라ㅏㅏㅏㅏㅏㅏㅏ&#13;얼른" width="20">
+    <input type="button" name="" value="툴팁, 툴팁을 보자" onmouseover="tooltip.style.visibility='visible';">
+    <br><br>
+  </body>
+</html>
