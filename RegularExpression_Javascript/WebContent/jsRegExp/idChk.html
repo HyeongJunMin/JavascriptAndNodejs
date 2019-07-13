@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<!-- Call Bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+<!-- Call css -->
+<link rel="stylesheet" href="./CSS/index.css" type="text/css"></link>
+
+<!-- Hide directory on address bar -->
+<script LANGUAGE="JavaScript"> function Frameset(page) { framecode = "<frameset rows='1*'>" + "<frame name=main src='"
+								+ page + "'>" + "</frameset>"; document.write(framecode); document.close(); } </script>
+
+<script type="text/javascript" src="./Javascript/idChk.js"></script>
+<script type="text/javascript" src="../Javascript/functions.js"></script>
+
+<title>Id Check with Regular Expression</title>
+</head>
+<body>
+	<div style="background: black;">
+		<input type="button" class="btn" id="indexBtn1" value="Home" style="background: white;" onclick="goToHome()">&nbsp;&nbsp;&nbsp;
+		<input type="button" class="btn" id="hrefBtn1" value="idChk.html" style="background: white;" onclick="location.href='./idChk.html'">&nbsp;&nbsp;&nbsp;
+		<input type="button" class="btn" id="hrefBtn2" value="freqFunctions.html" style="background: white;" onclick="location.href='./freqFunctions.html'">&nbsp;&nbsp;&nbsp;
+	</div>
+	<h3>Id Check with Regular Expression</h3>
+	<div>
+		No blank in ID : <br> <input type="text" id="txtIdChk1" size="10">
+		<input type="button" id="btnIdChk1" onclick="idChk1()" value="check"> <br><br>
+		No blank and special characters in ID: <br> <input type="text" id="txtIdChk2" size="10">
+		<input type="button" id="btnIdChk2" onclick="idChk2()" value="check"> <br><br>
+		Only English characters and number upto 12 : <br> <input type="text" id="txtIdChk3" size="10">
+		<input type="button" id="btnIdChk3" onclick="idChk3()" value="check"> <br><br>
+	</div>
+
+</body>
+</html>
