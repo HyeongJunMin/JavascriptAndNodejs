@@ -135,8 +135,8 @@
              available for use by the Realm.  -->
         <Realm className="org.apache.catalina.realm.UserDatabaseRealm" resourceName="UserDatabase"/>
       </Realm>
-      
-        <Host appBase="webapps" autoDeploy="true" name="localhost" unpackWARs="true">
+
+      <Host appBase="webapps" autoDeploy="true" name="localhost" unpackWARs="true">
 
         <!-- SingleSignOn valve, share authentication between web applications
              Documentation at: /docs/config/valve.html -->
@@ -147,9 +147,9 @@
         <!-- Access log processes all example.
              Documentation at: /docs/config/valve.html
              Note: The pattern used is equivalent to using pattern="common" -->
-			<Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/> 
+        <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="RegularExpression_Javascript" path="/RegularExpression_Javascript" reloadable="true" source="org.eclipse.jst.jee.server:RegularExpression_Javascript"/><Context docBase="FileIO_Javascript_inJSP" path="/FileIO_Javascript_inJSP" reloadable="true" source="org.eclipse.jst.jee.server:FileIO_Javascript_inJSP"/></Host>
+      <Context docBase="Animations_Javascript" path="/Animations_Javascript" reloadable="true" source="org.eclipse.jst.jee.server:Animations_Javascript"/></Host>
     </Engine>
   </Service>
 </Server>
